@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:confirmation",
+    "title": {
+        "text": "Teleport Info",
+        "color": "gold",
+        "bold": true
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:ender_pearl"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": "This will teleport you to spawn. It only works from this structure to spawn, to get back to this place you will have to use other ways of transportation."
+        }
+    ],
+    "inputs": [
+        {
+            "type": "minecraft:boolean",
+            "key": "hide_dialog",
+            "label": "Do not show this again",
+            "initial": false,
+            "on_true": "1",
+            "on_false": "0"
+        }
+    ],
+    "pause": false,
+    "after_action": "close",
+    "yes": {
+        "label": "Teleport",
+        "action": {
+            "type": "minecraft:run_command",
+            "command": "function spawn_structures:prepare_tp"
+        }
+    },
+    "no": {
+        "label": "Cancel"
+    }
+}
