@@ -38,6 +38,10 @@
         }
     },
     "no": {
-        "label": "Cancel"
+        "label": "Cancel",
+        "action": {
+            "type": "minecraft:dynamic/run_command",
+            "template": "scoreboard players set @s SpawnStructures.hide_dialog $(hide_dialog)"
+        }
     }
 }
