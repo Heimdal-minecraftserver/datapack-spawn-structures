@@ -1,5 +1,6 @@
 ## uninstall scoareboards
-scoreboard objectives remove SpawnStructures.hide_dialog
+scoreboard objectives remove hide.tpinfo
+scoreboard objectives remove teleport
 
 ## kill entties
 kill @e[tag=SpawnStructures]
