@@ -9,4 +9,5 @@ particle minecraft:portal ~ ~1 ~ 0 0 0 0.1 100 force
 playsound minecraft:entity.enderman.teleport ambient @s ~ ~ ~ 1 1
 
 ## Teleport to spawn
-function spawn_structures:teleport
+tag @s add teleport_me
+schedule function spawn_structures:teleport 1s
