@@ -9,3 +9,7 @@ playsound minecraft:entity.enderman.teleport ambient @s ~ ~ ~ 1 1
 ## Teleport to spawn
 tag @s add teleport_me
 schedule function spawn_structures:teleport 1s
+
+## reset
+#trigger
+scoreboard players reset @s teleport
