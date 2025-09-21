@@ -1,6 +1,4 @@
 ## Prepare teleportation
-# hide dialog
-#$scoreboard players set @s SpawnStructures.hide_dialog $(hide_dialog)
 # announce teleportation
 tellraw @s ["",{"text":"[Spawn Structures] ","color":"gold","bold":true},{"text":"Teleporting to spawn...","color":"gray"}]
 # visualise teleportation
