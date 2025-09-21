@@ -5,6 +5,7 @@
         "color": "gold",
         "bold": true
     },
+    "can_close_with_escape": true,
     "body": [
         {
             "type": "minecraft:item",
