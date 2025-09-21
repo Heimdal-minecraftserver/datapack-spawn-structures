@@ -34,14 +34,14 @@
         "label": "Teleport",
         "action": {
             "type": "minecraft:run_command",
-            "command": "function spawn_structures:prepare_tp"
+            "command": "trigger teleport"
         }
     },
     "no": {
         "label": "Cancel",
         "action": {
             "type": "minecraft:dynamic/run_command",
-            "template": "scoreboard players set @s SpawnStructures.hide_dialog $(hide_dialog)"
+            "template": "trigger hide.tpinfo set $(hide_dialog)"
         }
     }
 }
